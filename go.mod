@@ -1,9 +1,8 @@
-module battleCity
+module github.com/ShaolingPu/battleCity
 
 go 1.20
 
 require (
-	github.com/ShaolingPu/battleCity v0.0.0-20230815025935-b0f11a9e7266
 	github.com/hajimehoshi/ebiten/v2 v2.5.6
 	golang.org/x/image v0.11.0
 )

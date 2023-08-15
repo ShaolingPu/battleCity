@@ -28,10 +28,10 @@ import (
 	"golang.org/x/image/font"
 	"golang.org/x/image/font/opentype"
 
+	fonts "github.com/ShaolingPu/battleCity/resources/fonts/tank"
 	resources "github.com/ShaolingPu/battleCity/resources/images/tank"
 	levels "github.com/ShaolingPu/battleCity/resources/levels/tank"
 	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/examples/resources/fonts"
 	"github.com/hajimehoshi/ebiten/v2/inpututil"
 	"github.com/hajimehoshi/ebiten/v2/text"
 	"github.com/hajimehoshi/ebiten/v2/vector"
@@ -737,7 +737,7 @@ func (g *Game) DrawIntroScreen(screen *ebiten.Image) {
 
 }
 
-func (g *Game) GetDirection(t *Tank) [4]int {
+func (g *Game) GetDirection(t *Tank) int {
 	var directions [4]int
 	cur_dir := t.Face
 	dir0 := (t.Face + 1) % 4
